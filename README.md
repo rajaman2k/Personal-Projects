@@ -1,7 +1,7 @@
 # Personal-Projects
 
 1st Project(Pin Details fetcher)   [Java based Springboot backend + React JS Frontend]
-First Project is a Pin Details finder.
+First Project is a Pin Details finder. 
 It uses SpringBoot backend and a React frontend.
 For data storage, I have used Oracle DB 21 c Express Edition.
 I have loaded a csv file containing pincode,area,district and state into a table in the databse, tabke name - pincodes.
