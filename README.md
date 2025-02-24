@@ -63,7 +63,7 @@ The **Pin Finder Web App** is a full-stack application built with **React.js (Fr
   - `GET /api/pins/default/{pincode}` → Retrieve the first available matching record
 
 ## Usage
-
+- Pre-requisite : Please upload the pincode.csv file into a table in the database and update the db credentials in the backend before running the app.
 - Open the app in the browser.
 - Enter a PIN code in the input field.
 - If multiple areas are found, select the appropriate area from the dropdown.
@@ -150,6 +150,7 @@ The **Employee Management Web App** is a full-stack application built with **Rea
 
 ## Usage
 
+- Pre-requisite : Please upload the pincode.csv file into a table in the database and update the db credentials in the backend before running the app.
 - Open the app in the browser.
 - Use the Employee Form to enter employee details.
 - If necessary, add optional fields to include more details.
