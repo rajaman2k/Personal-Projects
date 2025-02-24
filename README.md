@@ -97,6 +97,7 @@ The **Employee Management Web App** is a full-stack application built with **Rea
 - **Employee Form:** Users can enter employee details such as Employee ID, Name, Date of Birth, Gender, Pincode, and Area information.
 - **PIN Code Lookup:** Fetches area, district, and state details based on the entered PIN code.
 - **Form Validation:** Ensures required fields (Name, Date of Birth, Gender, Pincode) are properly filled before submission.
+- **Optional Fields:** Users have the option to add additional fields such as Mobile, Email, Feedback, Designation, and Date of Joining if needed.
 - **User-Friendly UI:** Responsive design with an intuitive layout.
 - **Validation:** Ensures proper data entry and prevents invalid inputs.
 
@@ -129,7 +130,7 @@ The **Employee Management Web App** is a full-stack application built with **Rea
 
 1. Navigate to the backend project directory:
    ```bash
-   cd "backend-directory-name"
+    cd "backend-directory-name"
    ```
 2. Build and run the Spring Boot application:
    ```bash
@@ -151,7 +152,4 @@ The **Employee Management Web App** is a full-stack application built with **Rea
 
 - Open the app in the browser.
 - Use the Employee Form to enter employee details.
-
----
-Let me know if you want any modifications! 🚀
-
+- If necessary, add optional fields to include more details.
