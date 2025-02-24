@@ -8,3 +8,5 @@ I have loaded a csv file containing pincode,area,district and state into a table
 Now this web-app fetches pincode details according to the user input in the frontend.
 Whenever user inputs a valid Indian "Pincode", the corresponding area,district and state are fetched from the database and shown in the frontend. 
 For multiple records having the same pincode but different areas, all records are fetched and the user is given he option to choose his desired area via a dropdown in the same page. 
+csv file used in project has been attached.
+
