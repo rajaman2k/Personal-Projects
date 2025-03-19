@@ -154,3 +154,91 @@ The **Employee Management Web App** is a full-stack application built with **Rea
 - Open the app in the browser.
 - Use the Employee Form to enter employee details.
 - If necessary, add optional fields to include more details.
+
+
+
+
+
+
+3rd Project(Implments both employee registration form and pin finder):
+#Userbase - Employee Management System
+
+Userbase is a full-stack employee management application designed to streamline employee registration, search, and management. Built with React for the frontend and Spring Boot for the backend, this app provides a seamless user experience with a modern and responsive UI.
+Features
+1. Employee Registration
+
+    Register new employees with details like Employee ID, Name, DOB, Gender, PIN Code, Area, District, State, Mobile, Email, Feedback, Date of Joining, and Designation.
+
+    Dynamic addition of optional fields for flexibility.
+
+    Real-time PIN code lookup to auto-fill area, district, and state.
+
+2. Employee Search and Management
+
+    Search employees by ID or Name with real-time suggestions.
+
+    Edit or delete employee details with ease.
+
+    View detailed employee information in a clean and organized layout.
+
+3. List All Employees
+
+    Display all registered employees in a responsive table.
+
+    Includes sorting and filtering options for better data management.
+
+4. Responsive and Modern UI
+
+    Built with a vibrant gradient background, rounded corners, and smooth animations.
+
+    Fully responsive design for seamless use on desktop, tablet, and mobile devices.
+
+5. Backend Integration
+
+    RESTful APIs built with Spring Boot for efficient data handling.
+
+    Secure and scalable backend architecture.
+
+6. Dynamic Form Handling
+
+    Add or remove optional fields (e.g., Mobile, Email, Feedback) dynamically.
+
+    Input validation and error handling for a smooth user experience.
+
+Technologies Used
+
+    Frontend: React, React Router, CSS3
+
+    Backend: Spring Boot, Java, H2 Database (or Oracle DB)
+
+    APIs: RESTful APIs for communication between frontend and backend
+
+    Styling: Custom CSS with modern design principles
+
+How to Run
+
+    Backend:
+
+        Navigate to the backend directory.
+
+        Run the Spring Boot application using mvn spring-boot:run.
+
+        The backend will start at http://localhost:8080.
+
+    Frontend:
+
+        Navigate to the frontend directory.
+
+        Install dependencies using npm install.
+
+        Start the development server using npm start.
+
+        The app will be available at http://localhost:3000.
+
+Screenshots(included inside folder for reference)
+
+Employee Registration
+
+Employee Search
+
+Employee List
