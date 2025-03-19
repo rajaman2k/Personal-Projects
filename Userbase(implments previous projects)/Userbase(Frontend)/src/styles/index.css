@@ -1,0 +1,511 @@
+/* Vibrant Gradient Background */
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    max-width: 1300px;
+    padding: 40px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-header h2 {
+    color: #2c3e50;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.form-header p {
+    color: #7f8c8d;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Form Structure */
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    color: #34495e;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    color: #2c3e50;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: #ff6f61;
+    background: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff6f61;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.2);
+    outline: none;
+}
+
+/* Select Styling */
+.styled-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px !important;
+}
+
+/* Additional Fields Section */
+.additional-fields-section {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 24px;
+    border: 2px dashed #ff6f61;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 90%;
+    max-width: 600px;
+    backdrop-filter: blur(5px);
+}
+
+.additional-fields-section input, .additional-fields-section select, .additional-fields-section textarea {
+    font-size: 12px;
+    padding: 8px 10px;
+    width: 95%;
+}
+
+.field-adder {
+    width: 100%;
+    margin-bottom: 16px;
+    background: white;
+}
+
+.dynamic-field {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 16px;
+}
+
+.input-with-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.input-with-action input[type="date"] {
+    flex: 1;
+    min-width: 150px;
+}
+
+.remove-btn {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.remove-btn:hover {
+    background: #ff3b2f;
+    transform: scale(1.1);
+}
+
+/* Submit Button */
+.submit-btn {
+    background: linear-gradient(135deg, #ff6f61 0%, #ff9a9e 100%);
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: auto;
+    align-self: center;
+    margin-top: 32px;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 111, 97, 0.4);
+}
+
+/* Feedback Textarea */
+.feedback-input {
+    resize: vertical;
+    min-height: 100px;
+    padding: 12px !important;
+}
+
+/* Read-only Fields */
+input[readonly] {
+    background-color: #ecf0f1;
+    border-color: #bdc3c7;
+    cursor: not-allowed;
+    padding: 14px 16px;
+}
+
+/* Back Button */
+.back-btn {
+    background-color: transparent;
+    color: #ff6f61;
+    border: 2px solid #ff6f61;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.back-btn:hover {
+    background-color: #ff6f61;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
+}
+
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+/* Container Styles */
+.container, .search-container, .list-container, .edit-delete-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Header Styles */
+.form-header, .search-header, .list-header, .edit-delete-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form-header h2, .search-header h2, .list-header h2, .edit-delete-header h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-header p, .search-header p, .list-header p, .edit-delete-header p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* Input Group Styles */
+.input-group, .search-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    color: #2c3e50;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: #ff6f61;
+    background: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff6f61;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.2);
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background: #ff6f61;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff3b2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
+}
+
+.back-btn {
+    background-color: transparent;
+    color: #ff6f61;
+    border: 2px solid #ff6f61;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #ff6f61;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.3);
+}
+
+/* Table Styles */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-table th, .employee-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.employee-table th {
+    background: #6a89cc;
+    color: white;
+    font-weight: 600;
+}
+
+.employee-table tr:hover {
+    background: rgba(106, 137, 204, 0.1);
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #e55039;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Feedback Textarea Styles */
+.feedback-input {
+    resize: vertical;
+    min-height: 100px;
+    padding: 12px !important;
+}
+
+/* Read-only Fields */
+input[readonly] {
+    background-color: #ecf0f1;
+    border-color: #bdc3c7;
+    cursor: not-allowed;
+    padding: 14px 16px;
+}
+
+/* Suggestions Dropdown */
+.suggestions-dropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-top: 10px; /* Increased margin to push dropdown further down */
+    top: 100%; /* Ensures dropdown starts below the input */
+  }
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0;
+}
+
+/* Enhanced Search Components */
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.search-input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.suggestions-dropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-top: 0.5rem;
+}
+
+.suggestion-item {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.suggestion-item:hover {
+    background: #f8f9fa;
+    transform: translateX(4px);
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.emp-id {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-right: 1rem;
+}
+
+.emp-name {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .edit-delete-container {
+        padding: 2rem;
+        margin: 1rem;
+    }
+    
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .suggestion-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.75rem;
+    }
+    
+    .emp-id {
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Enhanced Input Focus States */
+input:focus {
+    border-color: #6a89cc;
+    box-shadow: 0 0 0 3px rgba(106, 137, 204, 0.2);
+}
+
+/* Clear Error States */
+.error-message {
+    padding: 1rem;
+    background: #ffe3e3;
+    border: 2px solid #ff6f61;
+    border-radius: 12px;
+    margin: 1rem 0;
+    text-align: center;
+}
