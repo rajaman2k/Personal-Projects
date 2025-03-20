@@ -235,10 +235,16 @@ How to Run
 
         The app will be available at http://localhost:3000.
 
-Screenshots(included inside folder for reference)
+Screenshots
+
+Dashboard
+![Dashboard](Screenshots/dashboard.png)
 
 Employee Registration
+![Registration](Screenshots/registration.png)
 
 Employee Search
+![Search,edit,delete Employee](Screenshots/edit-delete-employee.png)
 
 Employee List
+![Employee List](Screenshots/listall.png)
